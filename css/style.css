@@ -1,0 +1,129 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: Open Sans;
+}
+
+h1, h2, h3, h4 {
+  font-family: Poppins;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+.banner {
+  background-image: url(../images/blackbox.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.banner p {
+  color: white;
+  opacity: .7;
+  font-size: 20px;
+}
+.container {
+  width: 60vw;
+  margin: 20px auto;
+}
+
+.container h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.top-margin {
+  margin-top: 200px
+}
+
+.aliens {
+  background-color: rgb(230,230,230,0.4)
+}
+
+.btn-rose {
+  display: inline-block;
+  background-color: #fa90a4;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 1px 2px rgb(0,0,0, 20%)
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230 230 230);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid rgb(230,230,230);
+}
+
+.card img {
+  height: 100px;
+}
+
+.card h1 {
+  color: rgb(55,55,55)
+}
+
+.card p {
+  color: rgb(55,55,55);
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  padding: 60px;
+  background-color: #fa90a4;
+}
+
+.footer a {
+  font-size: 30px;
+  color: #fff;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 20px auto;
+  }
+  .container {
+    max-width: 100%;
+  }
+}
